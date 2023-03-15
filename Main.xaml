@@ -118,9 +118,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Flowchart.StartNode>
-        <x:Reference>__ReferenceID15</x:Reference>
+        <x:Reference>__ReferenceID14</x:Reference>
       </Flowchart.StartNode>
-      <FlowStep x:Name="__ReferenceID15">
+      <FlowStep x:Name="__ReferenceID14">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">10,133.6</av:Point>
@@ -248,7 +248,6 @@
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <av:Point x:Key="ShapeLocation">0,1023.5999999999999</av:Point>
                                         <av:Size x:Key="ShapeSize">200,52.8</av:Size>
-                                        <av:PointCollection x:Key="ConnectorLocation">100,1076.3999999999999 100,1126.3999999999999</av:PointCollection>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1" Reason="User Aborted Process">
@@ -258,23 +257,6 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </TerminateWorkflow>
-                                    <FlowStep.Next>
-                                      <FlowStep x:Name="__ReferenceID14">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <av:Point x:Key="ShapeLocation">0,1126.3999999999999</av:Point>
-                                            <av:Size x:Key="ShapeSize">200,52.8</av:Size>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;test&quot;]">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </ui:MessageBox>
-                                      </FlowStep>
-                                    </FlowStep.Next>
                                   </FlowStep>
                                 </FlowDecision.True>
                                 <FlowDecision.False>
@@ -412,7 +394,6 @@
       <x:Reference>__ReferenceID11</x:Reference>
       <x:Reference>__ReferenceID12</x:Reference>
       <x:Reference>__ReferenceID13</x:Reference>
-      <x:Reference>__ReferenceID14</x:Reference>
     </Flowchart>
   </Sequence>
 </Activity>
