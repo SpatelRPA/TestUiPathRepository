@@ -118,9 +118,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Flowchart.StartNode>
-        <x:Reference>__ReferenceID14</x:Reference>
+        <x:Reference>__ReferenceID13</x:Reference>
       </Flowchart.StartNode>
-      <FlowStep x:Name="__ReferenceID14">
+      <FlowStep x:Name="__ReferenceID13">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">10,133.6</av:Point>
@@ -169,7 +169,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <FlowDecision.True>
-                  <FlowStep x:Name="__ReferenceID9">
+                  <FlowStep x:Name="__ReferenceID8">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <av:Point x:Key="ShapeLocation">10,513.6</av:Point>
@@ -232,7 +232,7 @@
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:MessageBox>
                             <FlowStep.Next>
-                              <FlowDecision x:Name="__ReferenceID10" Condition="[FinalButton.ToLower.Contains(&quot;cancel&quot;)]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79.2,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
+                              <FlowDecision x:Name="__ReferenceID9" Condition="[FinalButton.ToLower.Contains(&quot;cancel&quot;)]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79.2,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -243,7 +243,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <FlowDecision.True>
-                                  <FlowStep x:Name="__ReferenceID11">
+                                  <FlowStep x:Name="__ReferenceID10">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <av:Point x:Key="ShapeLocation">0,1023.5999999999999</av:Point>
@@ -265,7 +265,6 @@
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <av:Point x:Key="ShapeLocation">370,973.6</av:Point>
                                         <av:Size x:Key="ShapeSize">200,52.8</av:Size>
-                                        <av:PointCollection x:Key="ConnectorLocation">570,1000 650,1000 650,1063.6</av:PointCollection>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <ui:InvokePowerShell x:TypeArguments="x:String" ContinueOnError="{x:Null}" CommandText="[&quot;$newDateFormat = &quot;+DateFormat+&quot;&#xA;&#xA;&#xA;Set-ItemProperty -Path &quot;+&quot;HKCU:\Control Panel\International&quot;+&quot; -Name sShortDate -Value $newDateFormat&#xA;&#xA;&#xA;Set-ItemProperty -Path &quot;+&quot;HKLM:\System\CurrentControlSet\Control\Nls\Language&quot;+&quot; -Name sShortDate -Value $newDateFormat&#xA;&#xA;Stop-Process -processname explorer&#xA;&quot;]" DisplayName="Change Date Format" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_2">
@@ -273,23 +272,6 @@
                                         <scg:Dictionary x:TypeArguments="x:String, Argument" />
                                       </ui:InvokePowerShell.PowerShellVariables>
                                     </ui:InvokePowerShell>
-                                    <FlowStep.Next>
-                                      <FlowStep x:Name="__ReferenceID8">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <av:Point x:Key="ShapeLocation">550,1063.6</av:Point>
-                                            <av:Size x:Key="ShapeSize">200,52.8</av:Size>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;The Date Format is updated&quot;]">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </ui:MessageBox>
-                                      </FlowStep>
-                                    </FlowStep.Next>
                                   </FlowStep>
                                 </FlowDecision.False>
                               </FlowDecision>
@@ -316,7 +298,7 @@
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:InputDialog>
                             <FlowStep.Next>
-                              <FlowStep x:Name="__ReferenceID12">
+                              <FlowStep x:Name="__ReferenceID11">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <av:Point x:Key="ShapeLocation">393.2,689.2</av:Point>
@@ -349,7 +331,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <FlowDecision.False>
-                                      <FlowStep x:Name="__ReferenceID13">
+                                      <FlowStep x:Name="__ReferenceID12">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <av:Point x:Key="ShapeLocation">700,903.6</av:Point>
@@ -393,7 +375,6 @@
       <x:Reference>__ReferenceID10</x:Reference>
       <x:Reference>__ReferenceID11</x:Reference>
       <x:Reference>__ReferenceID12</x:Reference>
-      <x:Reference>__ReferenceID13</x:Reference>
     </Flowchart>
   </Sequence>
 </Activity>
